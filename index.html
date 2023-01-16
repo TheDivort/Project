@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<title>Проект "Построение графиков функций"</title>
+		<meta name="robots" content="max-image-preview:large">
+		<link rel="canonical" href="index.htm">
+		<meta name="generator" content="">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/umath.ru\/calc\/graph\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/umath.ru\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/umath.ru\/","name":"\u0413\u043b\u0430\u0432\u043d\u0430\u044f","description":"\u0418\u0437\u0443\u0447\u0430\u0435\u043c \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0443 \u0432\u043c\u0435\u0441\u0442\u0435!","url":"https:\/\/umath.ru\/"},"nextItem":"https:\/\/umath.ru\/calc\/#listItem"},{"@type":"ListItem","@id":"https:\/\/umath.ru\/calc\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/umath.ru\/calc\/","name":"\u041a\u0430\u043b\u044c\u043a\u0443\u043b\u044f\u0442\u043e\u0440\u044b","url":"https:\/\/umath.ru\/calc\/"},"nextItem":"https:\/\/umath.ru\/calc\/graph\/#listItem","previousItem":"https:\/\/umath.ru\/#listItem"},{"@type":"ListItem","@id":"https:\/\/umath.ru\/calc\/graph\/#listItem","position":3,"item":{"@type":"WebPage","@id":"https:\/\/umath.ru\/calc\/graph\/","name":"\u041f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u0444\u0438\u043a\u0430 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u043e\u043d\u043b\u0430\u0439\u043d","description":"\u041e\u043d\u043b\u0430\u0439\u043d \u0441\u0435\u0440\u0432\u0438\u0441 \u0434\u043b\u044f \u043f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u044f \u0433\u0440\u0430\u0444\u0438\u043a\u043e\u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u0439. \u0414\u0435\u043b\u0438\u0442\u0435\u0441\u044c \u0441\u0441\u044b\u043b\u043a\u0430\u043c\u0438 \u043d\u0430 \u0433\u0440\u0430\u0444\u0438\u043a, \u0441\u0442\u0440\u043e\u0439\u0442\u0435 \u0433\u0440\u0430\u0444\u0438\u043a\u0438 \u0444\u0443\u043d\u043a\u0446\u0438\u0439, \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u0445 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438 \u0438 \u0432 \u043f\u043e\u043b\u044f\u0440\u043d\u044b\u0445 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0430\u0445.","url":"https:\/\/umath.ru\/calc\/graph\/"},"previousItem":"https:\/\/umath.ru\/calc\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/umath.ru\/#organization","name":"umath.ru","url":"https:\/\/umath.ru\/"},{"@type":"WebPage","@id":"https:\/\/umath.ru\/calc\/graph\/#webpage","url":"https:\/\/umath.ru\/calc\/graph\/","name":"\u041f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u0444\u0438\u043a\u0430 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u043e\u043d\u043b\u0430\u0439\u043d | umath.ru","description":"\u041e\u043d\u043b\u0430\u0439\u043d \u0441\u0435\u0440\u0432\u0438\u0441 \u0434\u043b\u044f \u043f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u044f \u0433\u0440\u0430\u0444\u0438\u043a\u043e\u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u0439. \u0414\u0435\u043b\u0438\u0442\u0435\u0441\u044c \u0441\u0441\u044b\u043b\u043a\u0430\u043c\u0438 \u043d\u0430 \u0433\u0440\u0430\u0444\u0438\u043a, \u0441\u0442\u0440\u043e\u0439\u0442\u0435 \u0433\u0440\u0430\u0444\u0438\u043a\u0438 \u0444\u0443\u043d\u043a\u0446\u0438\u0439, \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u0445 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438 \u0438 \u0432 \u043f\u043e\u043b\u044f\u0440\u043d\u044b\u0445 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0430\u0445.","inLanguage":"ru-RU","isPartOf":{"@id":"https:\/\/umath.ru\/#website"},"breadcrumb":{"@id":"https:\/\/umath.ru\/calc\/graph\/#breadcrumblist"},"datePublished":"2015-02-26T20:23:58+03:00","dateModified":"2020-12-06T20:10:55+03:00"},{"@type":"WebSite","@id":"https:\/\/umath.ru\/#website","url":"https:\/\/umath.ru\/","name":"umath.ru","description":"\u0418\u0437\u0443\u0447\u0430\u0435\u043c \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0443 \u0432\u043c\u0435\u0441\u0442\u0435!","inLanguage":"ru-RU","publisher":{"@id":"https:\/\/umath.ru\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="umath.ru &raquo; Лента" href="feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="umath.ru &raquo; Лента комментариев" href="comments/feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="umath.ru &raquo; Лента комментариев к &laquo;Построение графика функции онлайн&raquo;" href="feed/index.htm">
+<style type="text/css">
+::-webkit-scrollbar {
+  width: 0;
+}
+</style>
+<style id="wpo-min-header-1" media="print">@media print{@page{margin:2cm}.entry-header,.site-footer{margin:0}.posts{padding:0}.entry-content,.entry-content p,.section-inner,.section-inner.max-percentage,.section-inner.medium,.section-inner.small,.section-inner.thin{max-width:100%;width:100%}body{background:#fff!important;color:#000;font:13pt Georgia,"Times New Roman",Times,serif;line-height:1.3}h1{font-size:20pt}h2,h2.entry-title,h3,h4,.has-normal-font-size,.has-regular-font-size,.has-large-font-size,.comments-header{font-size:14pt;margin-top:1cm}a{page-break-inside:avoid}blockquote{page-break-inside:avoid}h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid}img{page-break-inside:avoid;page-break-after:avoid}table,pre{page-break-inside:avoid}ul,ol,dl{page-break-before:avoid}a:link,a:visited,a{background:transparent;font-weight:700;text-decoration:underline}a{page-break-inside:avoid}a[href^="http"]:after{content:" < " attr(href) "> "}a:after>img{content:""}article a[href^="#"]:after{content:""}a:not(:local-link):after{content:" < " attr(href) "> "}#site-header,.comment-form,.comments-wrapper,.comment .comment-metadata,.footer-social-wrapper,.footer-widgets-outer-wrapper,.header-navigation-wrapper,.entry-categories,.post-comment-link.meta-wrapper,.pagination-wrapper,.pagination-single,.post-meta-wrapper.post-meta-edit-link-wrapper,.post-meta-wrapper.post-meta-single-bottom,.post-separator,.site-logo img{display:none}.entry-content .wp-block-button .wp-block-button__link,.entry-content .wp-block-button .wp-block-file__button,.entry-content .button{background:none;color:#000}}</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--accent: #087faf;--wp--preset--color--primary: #000000;--wp--preset--color--secondary: #6d6d6d;--wp--preset--color--subtle-background: #dbdbdb;--wp--preset--color--background: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 26.25px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 21px;--wp--preset--font-size--larger: 32px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpo_min-header-0-css' href='wp-content/cache/wpo-minify/1673278197/assets/wpo-minify-header-bf4e316b.min.css' media='all'>
+<script defer="" src='wp-content/cache/wpo-minify/1673278197/assets/wpo-minify-header-a24d0929.min.js' id='wpo_min-header-0-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.htm"><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/206"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1.1">
+<link rel='shortlink' href='index.htm?p=206'>
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed-8?url=https%3A%2F%2Fumath.ru%2Fcalc%2Fgraph%2F">
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed-9?url=https%3A%2F%2Fumath.ru%2Fcalc%2Fgraph%2F&#038;format=xml">
+	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+		<script async="" src="gtag/js?id=UA-180255465-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-180255465-1');
+		</script>
+		<script data-ad-client="ca-pub-3542707809584078" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body class="page-template page-template-templates page-template-template-full-width page-template-templatestemplate-full-width-php page page-id-206 page-child parent-pageid-9 custom-background wp-embed-responsive singular has-full-width-content enable-search-modal missing-post-thumbnail has-no-pagination showing-comments show-avatars template-full-width footer-top-visible reduced-spacing">
+		<a class="skip-link screen-reader-text" href="#site-content">Перейти к содержимому</a><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+		<header id="site-header" class="header-footer-group" role="banner">
+			<div class="header-inner section-inner">
+				<div class="header-titles-wrapper">
+					<div class="header-titles">
+					</button>
+				</div>
+			</div>
+			<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal" role="dialog" aria-modal="true" aria-label="Поиск">
+	</div>
+</div>
+		</header>		
+<main id="site-content">
+<article class="post-206 page type-page status-publish hentry" id="post-206">
+<header class="entry-header has-text-align-center header-footer-group">
+	<div class="entry-header-inner section-inner medium">
+		<h1 class="entry-title">Построение графика функции</h1>
+	</div>
+</header>
+	<div class="post-inner  ">
+		<div class="entry-content">		
+<style type="text/css">
+    .graph-wrapper textarea {
+        font-family: monospace;
+    }
+    .graph-input-panel label {
+        display: flex;
+    }
+    .graph-wrapper > * {
+        margin: 1rem 0;
+    }
+    .graph-control-panel input[type=button] {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        min-width: 2.7rem;
+        background: rgba(0, 0, 0, 0.12);
+        color: black;
+    }
+    .graph-control-panel label {
+        display: inline-block;
+    }
+    .entry-content th:first-child {
+        width: 30%;
+    }
+    #go-to-point input {
+        display: inline-block;
+    }
+    #go-to-point input[type=number] {
+        width: 10rem;
+    }
+    #position-label {
+        position: absolute;
+        top: 0;
+        right: 34px;
+        background-color: #fff;
+        border: 1px solid #1e73be;
+        font-family: monospace;
+        user-select: none;
+    }
+    #canvas-wrapper {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+    }
+    .canvas-overflow-wrapper {
+        width: 100%;
+        overflow: scroll;
+    }
+    .graph-input-panel {
+        margin-bottom: 0.5rem;
+    }
+    .graph-input-panel input[type=text] {
+        width: 10rem;
+        display: inline-block;
+    }
+    .graph-control-group {
+        display: inline-block;
+        margin: 0 0.5rem 0 0;
+    }
+</style>
+<script defer="" src="scripts/math.js" type="text/javascript"></script>
+<script defer="" src="scripts/graph.js" type="text/javascript"></script>
+<div class="graph-wrapper">
+    <div class="graph-input-panel">
+        <label>Режим:
+            <select id="plot_mode" onchange="changeFuncMode();">
+                <option value="0" selected="selected">Обычный y(x)</option>
+                <option value="1">Параметрический</option>
+                <option value="2">Полярные координаты</option>
+            </select>
+        </label>
+        <div id="usual_form">
+            <label><img decoding="async" src="wp-content/img/1.svg" class="ql-img-inline-formula " alt="&#121;&#40;&#120;&#41;&#32;&#61;" title="Rendered by QuickLaTeX.com" height="22" width="61" style="vertical-align: -6px;">
+                <textarea id="func_field">sin(x); e^x</textarea>
+            </label>
+        </div>
+        <div id="parametric_form" style="display:none;">
+            <label><img decoding="async" loading="lazy" src="wp-content/img/2.svg" class="ql-img-inline-formula " alt="&#120;&#40;&#116;&#41;&#32;&#61;" title="Rendered by QuickLaTeX.com" height="22" width="58" style="vertical-align: -6px;">
+                <textarea id="func_field_x">sin(t)*(exp(cos(t))-2*cos(4*t)+sin(t/12)^5)</textarea>
+            </label>
+            <label><img decoding="async" loading="lazy" src="wp-content/img/3.svg" class="ql-img-inline-formula " alt="&#121;&#40;&#116;&#41;&#32;&#61;" title="Rendered by QuickLaTeX.com" height="22" width="57" style="vertical-align: -6px;">
+                <textarea style="font-family: monospace;" id="func_field_y">cos(t)*(exp(cos(t))-2*cos(4*t)+sin(t/12)^5)</textarea>
+            </label>
+            <div>
+                <img decoding="async" loading="lazy" src="wp-content/img/4.svg" class="ql-img-inline-formula " alt="&#116;&#32;&#92;&#105;&#110;" title="Rendered by QuickLaTeX.com" height="14" width="26" style="vertical-align: -1px;">
+                [<input type="text" id="mint" value="0">,
+                <input type="text" id="maxt" value="12*pi">].
+            </div>
+        </div>
+        <div id="polar_coordinates" style="display:none;">
+            <label><img decoding="async" loading="lazy" src="wp-content/img/5.svg" class="ql-img-inline-formula " alt="&#114;&#40;&#116;&#41;&#32;&#61;" title="Rendered by QuickLaTeX.com" height="22" width="56" style="vertical-align: -6px;">
+                <textarea style="font-family: monospace;" id="func_field_r">3*sin(4*t)</textarea>
+            </label>
+            <div>
+                <img decoding="async" loading="lazy" src="wp-content/img/4.svg" class="ql-img-inline-formula " alt="&#116;&#32;&#92;&#105;&#110;" title="Rendered by QuickLaTeX.com" height="14" width="26" style="vertical-align: -1px;">
+                [<input type="text" size="5" id="mina" value="0">,
+                <input type="text" size="5" id="maxa" value="2*pi">].
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="button" value="Построить график" onclick="graphButtonClick();">
+    </div>
+    <div class="graph-control-panel">
+        <div class="graph-control-group">
+            <input type="button" title="Стандартный масштаб" value="100%" onclick="changeScale(0);">
+            <input type="button" title="Увеличить" value="+" onclick="changeScale(1);">
+            <input type="button" title="Уменьшить" value="−" onclick="changeScale(-1);">
+        </div>
+
+        <div class="graph-control-group">
+            <input type="button" title="Влево" value="←" onclick="changeCenter(3)">
+            <input type="button" title="Вправо" value="→" onclick="changeCenter(1)">
+            <input type="button" title="К началу координат" value="·" onclick="changeCenter(4)">
+            <input type="button" title="Вверх" value="↑" onclick="changeCenter(0)">
+            <input type="button" title="Вниз" value="↓" onclick="changeCenter(2)">
+        </div>
+
+        <div class="graph-control-group">
+            <input type="button" title="Перейти к началу координат и перерисовать всё в обычном масштабе" value="↺" onclick="refreshCanvas();">
+        </div>
+        <label>
+            <input type="checkbox" onchange="if(!this.checked) {document.getElementById('position-label').style.display = 'none';}" id="showCoord" title="Показывать координаты курсора" checked="">
+            <code>(x, y)</code>
+        </label>
+    </div>
+    <div class="canvas-overflow-wrapper">
+        <div id="canvas-wrapper">
+            <div id="position-label"></div>
+            <canvas id="graph-canvas" width="900" height="753"></canvas>
+        </div>
+    </div>
+    <div class="mth-ads">
+        <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3542707809584078" data-ad-slot="2442706642" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <div id="go-to-point">
+        <span>Перейти к точке:</span>
+        <input type="number" step="any" title="координата x" id="xpoint" value="0">
+        <input type="number" step="any" title="координата y" id="ypoint" value="0">
+        <input type="button" value="Перейти" onclick="showPoint();">
+    </div>
+    <div>
+    </table>
+</div>
+<p>
+    Как пользоваться программой:
+</p>
+<ul>
+    <li>Можно строить графики сразу нескольких функций. Для этого просто разделяйте функции точкой с запятой (;).</li>
+    <li>Масштаб изменяется с помощью кнопок &#171;+&#187; и &#171;−&#187;. Кнопка &#171;100%&#187; меняет масштаб на стандартный.</li>
+    <li>Положение экрана можно менять, перетаскивая его мышью, а можно стрелками на панели слева.</li>
+    <li>Кнопка &#171;·&#187; в центре джойстика переносит начало координат в центр экрана.</li>
+    <li>Кнопка &#171;↺&#187; изменяет масштаб на стандартный и переносит начало координат в центр.</li>
+    <li>В форме под графиком можно выбрать точку, которую нужно расположить в центре экрана.</li>
+</ul>
+<h3>Режимы</h3>
+<p>
+    <strong>Обычный.</strong> В этом режиме можно строить графики функций, заданных уравнением <img decoding="async" loading="lazy" src="wp-content/img/6.svg" class="ql-img-inline-formula " alt="&#121;&#32;&#61;&#32;&#102;&#40;&#120;&#41;&#46;" title="Rendered by QuickLaTeX.com" height="22" width="85" style="vertical-align: -6px;">
+</p>
+<p>
+    <strong>Параметрический.</strong> Этот режим предназначен для построения графиков кривых, заданных
+    <em>параметрически</em>, то есть в виде <img decoding="async" loading="lazy" src="wp-content/img/7.svg" class="ql-img-inline-formula " alt="&#120;&#32;&#61;&#32;&#120;&#40;&#116;&#41;&#44;&#32;&#121;&#32;&#61;&#32;&#121;&#40;&#116;&#41;&#46;" title="Rendered by QuickLaTeX.com" height="22" width="165" style="vertical-align: -6px;">
+</p>
+
+<p>
+    <strong>Полярные координаты.</strong> Режим позволяет построить график кривой, заданной в полярной системе
+    координат, то
+    есть уравнением <img decoding="async" loading="lazy" src="wp-content/img/8.svg" class="ql-img-inline-formula " alt="&#114;&#32;&#61;&#32;&#114;&#40;&#116;&#41;&#44;" title="Rendered by QuickLaTeX.com" height="22" width="77" style="vertical-align: -6px;"> где <img decoding="async" loading="lazy" src="wp-content/img/9.svg" class="ql-img-inline-formula " alt="&#114;" title="Rendered by QuickLaTeX.com" height="9" width="10" style="vertical-align: 0px;"> &#8212; радиальная координата, а <img decoding="async" loading="lazy" src="wp-content/img/10.svg" class="ql-img-inline-formula " alt="&#116;" title="Rendered by QuickLaTeX.com" height="13" width="7" style="vertical-align: 0px;"> &#8212; полярная координата.
+</p>
+</table>
+<h3>Список функций</h3>
+<table>
+    <tbody>
+    <tr>
+        <th>
+            <strong>Функция</strong></th>
+        <th>
+            <strong>Описание</strong></th>
+    </tr>
+    <tr>
+        <td>
+            <code>+ − * /</code></td>
+        <td>
+            Сложение, вычитание, умножение, деление
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>( )</code></td>
+        <td>
+            Группирующие скобки
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>abs()</code> или <code>| |</code></td>
+        <td>
+            Модуль числа. Выражение <code>abs(x)</code> эквивалентно <code>|x|</code>. Если функция содержит модуль под
+            модулем, то пользуйтесь <code>abs()</code>. Например, если вы хотите построить график функции <code>|1-x+|x+5||</code>,
+            то нужно вводить <code>abs(1-x+abs(x+5))</code>.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>pow()</code> или <code>^</code></td>
+        <td>
+            Степень числа. Например, выражения <code>pow(x, 3)</code> и <code>x^3</code> дают <code>x</code> в третьей
+            степени
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>sqrt()</code></td>
+        <td>
+            Квадратный корень
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>sin()</code></td>
+        <td>
+            Синус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>cos()</code></td>
+        <td>
+            Косинус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>tg()</code></td>
+        <td>
+            Тангенс
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>ctg()</code></td>
+        <td>
+            Котангенс
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>arcsin()</code></td>
+        <td>
+            Арксинус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>arccos()</code></td>
+        <td>
+            Арккосинус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>arctg()</code></td>
+        <td>
+            Арктангенс
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>arcctg()</code></td>
+        <td>
+            Арккотангенс
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>ln()</code></td>
+        <td>
+            Натуральный логарифм числа
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>lg()</code></td>
+        <td>
+            Десятичный логарифм числа
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>log(a, b)</code></td>
+        <td>
+            Логарифм числа <code>b</code> по основанию <code>a</code></td>
+    </tr>
+    <tr>
+        <td>
+            <code>exp()</code></td>
+        <td>
+            Степень числа <code>e</code></td>
+    </tr>
+    <tr>
+        <td>
+            <code>sh()</code></td>
+        <td>
+            Гиперболический синус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>ch()</code></td>
+        <td>
+            Гиперболический косинус
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>th()</code></td>
+        <td>
+            Гиперболический тангенс
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>cth()</code></td>
+        <td>
+            Гиперболический котангенс
+        </td>
+    </tr>
+    </tbody>
+</table>
+<h2>Проект</h2>
+<p>
+    Данный сайт представляет проект, темой которого является упрощенния создания графиков функций. Автором проекта является Дмитриев Егор ученик 9"А" класса.
+</p>
+		</div>
+	</div>
+	<div class="section-inner">
+	</div>
+</main>
+</div></div>							</div>	
+					</div>
+				</aside>	
+		</div>
+	</div>
+			<footer id="site-footer" role="contentinfo" class="header-footer-group">
+				<div class="section-inner">
+					<div class="footer-credits">
+
+						<p class="footer-copyright">&copy;
+							Проект сделал Дмитриев Егор
+						</p>
+					</div>
+					<a class="to-the-top" href="#site-header">
+						<span class="to-the-top-long">
+							Наверх <span class="arrow" aria-hidden="true">&uarr;</span>						</span>
+						<span class="to-the-top-short">
+							Вверх <span class="arrow" aria-hidden="true">&uarr;</span>						</span>
+					</a>
+				</div>
+			</footer>
+
+	</body>
+</html>
